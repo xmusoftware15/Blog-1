@@ -4,8 +4,8 @@
       <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image" src="${pageContext.request.contextPath}/static/userImages/${blogger.imagename}" alt="EZLippi">
-          <p class="site-author-name" itemprop="name">SinceNovember</p>
-          <p class="site-description motion-element" itemprop="description">Since Huaian</p>
+          <p class="site-author-name" itemprop="name">Moonlight</p>
+          <p class="site-description motion-element" itemprop="description">From XiaMen</p>
         </div>
         <nav class="site-state motion-element">
             <div class="site-state-item site-state-posts">
@@ -39,23 +39,23 @@
             </div>
         <div class="links-of-author motion-element">
               <span class="links-of-author-item">
-                <a href="https://github.com/SinceNovember" target="_blank" title="GitHub">
+                <a href="https://github.com/xmusoftware15" target="_blank" title="GitHub">
                     <i class="fa fa-fw fa-github"></i>
                   GitHub
                 </a>
               </span>
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/SinceNovember" target="_blank" title="weibo">
+               <span class="links-of-author-item">
+                <a href="https://blog.csdn.net/qq_37841991" target="_blank" title="weibo">
                     <i class="fa fa-fw fa-weibo"></i>
-                  weibo
+                  CSDN
                 </a>
               </span>
-              <span class="links-of-author-item">
+              <!--<span class="links-of-author-item">
                 <a href="https://www.zhihu.com/people/liu-yu-dong-74-62/activities" target="_blank" title="zhihu">
                     <i class="fa fa-fw fa-battery-3"></i>
                   zhihu
                 </a>
-              </span>
+              </span> -->
         </div>
       </section>
     </div>

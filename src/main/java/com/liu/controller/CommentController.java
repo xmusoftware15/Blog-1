@@ -18,8 +18,8 @@ import net.sf.json.JSONObject;
 
  /** 
  * @ClassName: CommentController 
- * @author: lyd
- * @date: 2017年10月10日 下午5:25:11 
+ * @author: moonlight
+ * @date: 2018.5.12
  * @describe:评论博客Controller
  */
 @Controller
@@ -32,7 +32,7 @@ public class CommentController {
 	//评论信息保存
 	@RequestMapping("/save")
 	public String save(Comment comment,HttpServletRequest request,HttpServletResponse response,HttpSession session) throws Exception{
-		System.out.println("评论。");
+//		System.out.println("评论。");
 //		String sRand=(String)session.getAttribute("sRand");//获取验证码的值
 		JSONObject jsonObject=new JSONObject();
 		int resultTotal=0;

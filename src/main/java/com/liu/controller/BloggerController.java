@@ -14,8 +14,8 @@ import com.liu.service.BloggerService;
 
  /** 
  * @ClassName: BloggerController 
- * @author: lyd
- * @date: 2017年10月10日 下午5:21:48 
+ * @author: moonlight
+ * @date: 2018.5.12 
  * @describe:通过shiro进行登陆验证
  */
 @Controller

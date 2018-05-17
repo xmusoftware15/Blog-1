@@ -24,8 +24,8 @@ import net.sf.json.JSONObject;
 
  /** 
  * @ClassName: SystemAdminController 
- * @author: lyd
- * @date: 2017年10月10日 下午4:47:30 
+ * @author: moonlight
+ * @date: 2018.5.12
  * @describe:重新刷新系统缓存
  */
 @Controller

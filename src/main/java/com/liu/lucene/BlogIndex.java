@@ -42,7 +42,7 @@ public class BlogIndex {
 	private Directory directory;   
 	private IndexWriter getWriter() throws Exception
 	{
-		directory=FSDirectory.open(Paths.get("C:\\blog_Index"));//创建目录 本地磁盘存储
+		directory=FSDirectory.open(Paths.get("/root/blog_Index"));//创建目录 本地磁盘存储
 		SmartChineseAnalyzer analyzer=new SmartChineseAnalyzer();//配置解析器
 		IndexWriterConfig config=new IndexWriterConfig(analyzer);//创建IndexWriter配置
 		IndexWriter indexWriter=new IndexWriter(directory, config);//创建IndexWriter

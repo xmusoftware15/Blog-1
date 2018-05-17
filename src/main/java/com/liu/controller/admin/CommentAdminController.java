@@ -23,8 +23,8 @@ import net.sf.json.JsonConfig;
 
  /** 
  * @ClassName: CommentAdminController 
- * @author: lyd
- * @date: 2017年10月10日 下午4:40:42 
+ * @author: moonlight
+ * @date: 2018.5.12
  * @describe:评论信息
  */
 @Controller

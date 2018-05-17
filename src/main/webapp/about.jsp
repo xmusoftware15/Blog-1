@@ -90,16 +90,16 @@
 	<h2 class="post-title" itemprop="name headline">about</h2>
 </header>
       <h2 id="个人简介："><a href="#" class="headerlink" title="个人简介："></a>个人简介：</h2><ul>
-<li>SinceNovember</li>
-<li>Web后台开发、Java开发者</li>
-<li>来自江苏淮安</li>
-<li>Email: 83428190@qq.com </li>
+<li>Moonlight</li>
+<li>软件工程专业，略懂一些c、c++、linux，熟悉java，大三学生</li>
+<li>来自福建厦门</li>
+<li>Email: 1241621063@qq.com </li>
 </ul>
 <h3 id="关于本站："><a href="#" class="headerlink" title="关于本站："></a>关于本站：</h3><ul>
 <li>使用主题<a href="https://hexo.io/" target="_blank" rel="external">hexo-theme</a></li>
 <li>后台使用SpringMVC+Spring+Mybatis框架.</li>
-<li>折腾开始于2018年2月1日.</li>
-<li><a href="https://www.github.com/SinceNovember">获取源码</a>
+<li>折腾开始于2018年4月25日.</li>
+<li><a href="https://www.github.com/xmusoftware15">获取源码</a>
 </ul>
 <h2 id="个人签名"><a href="#" class="headerlink" title="个人签名"></a>个人签名</h2><ul>
 ${blogger.sign}

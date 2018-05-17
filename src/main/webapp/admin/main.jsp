@@ -139,7 +139,7 @@
 	</div>
 </div>
 <div region="south" style="height: 25px;padding: 5px" align="center">
-	 刘宇东的SSM博客系统 
+	Moonlight的SSM博客系统 
 </div>
 <div id="dlg" class="easyui-dialog" style="width:400px; height:200px; padding:10px 20px" 
 	closed="true" buttons="#dlg-buttons">

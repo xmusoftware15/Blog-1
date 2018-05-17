@@ -8,8 +8,8 @@ import net.sf.json.processors.JsonValueProcessor;
   
  /** 
  * @ClassName: DateJsonValueProcessor 
- * @author: lyd
- * @date: 2017年10月10日 下午10:28:18 
+ * @author: moonlight
+ * @date: 2018.5.12
  * @describe:Json Date处理
  */
 public class DateJsonValueProcessor implements JsonValueProcessor {  

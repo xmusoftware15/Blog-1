@@ -25,8 +25,8 @@ import com.liu.service.BlogService;
 
  /** 
  * @ClassName: IndexController 
- * @author: lyd
- * @date: 2017年10月10日 下午9:51:23 
+ * @author: moonlight
+ * @date: 2018.5.12
  * @describe:索引信息Controller
  */
 @Controller
@@ -79,7 +79,7 @@ public class IndexController {
 					param.toString()));
 			modelAndView.addObject("blogList", blogList);
 			modelAndView.addObject("commonPage", "foreground/blog/blogList.jsp");
-			modelAndView.addObject("title", "博客主页 - 刘宇东的博客");
+			modelAndView.addObject("title", "博客主页 - 胡辉的博客");
 			modelAndView.setViewName("mainTemp");
 		return modelAndView;
 	}

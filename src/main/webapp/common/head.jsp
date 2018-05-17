@@ -5,7 +5,7 @@
   <div class="custom-logo-site-title">
     <a href="${pageContext.request.contextPath }/blog/1" class="brand" rel="start" style="opacity: 1;">
       <span class="logo-line-before"><i class="" style="transform: translateX(100%);"></i></span>
-      <span class="site-title" style="opacity: 1; top: 0px;">SinceNovember</span>
+      <span class="site-title" style="opacity: 1; top: 0px;">Moonlight</span>
       <span class="logo-line-after"><i class="" style="transform: translateX(-100%);"></i></span>
     </a>
   </div>

@@ -44,7 +44,7 @@ public class BloggerAdminController {
 		{
 			String filePath = request.getServletContext().getRealPath("/"); //获取服务器根路径
 			String imageName = DateUtil.getCurrentDateStr() + "." + imageFile.getOriginalFilename().split("\\.")[1];//获取头像名
-			imageFile.transferTo(new File(filePath + "static\\userImages\\" + imageName));//复制到新地址
+			imageFile.transferTo(new File(filePath + "static/userImages/" + imageName));//复制到新地址
 			blogger.setImagename(imageName);
 		}
 		int resultTotal=bloggerService.updateBlogger(blogger);//修改操作

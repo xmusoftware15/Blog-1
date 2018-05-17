@@ -31,7 +31,7 @@ import com.liu.model.PageBean;
 import com.liu.service.BlogService;
 import com.liu.service.BlogTypeService;
 import com.liu.service.CommentService;
-import com.mysql.fabric.Response;
+
 
 @Controller
 @RequestMapping("/admin/blog")
@@ -51,7 +51,6 @@ public class BlogAdminController {
 		if(blog.getId()==null){//看该博客是否有id，没有则进行保存操作
 			resultTotal=blogService.addBlog(blog);
 			blogIndex.addIndex(blog);//添加索引
-			
 		}
 		else{
 			resultTotal=blogService.update(blog);//修改博客
@@ -62,7 +61,7 @@ public class BlogAdminController {
 		if(resultTotal>0)
 		{
 			int allBlogs=blogService.getAllBlog().size();
-			request.getSession().getServletContext().setAttribute("countsallblogs", allBlogs);//跟新后进行对servletContext中得数据
+			request.getSession().getServletContext().setAttribute("countsallblogs", allBlogs);//更新后进行对servletContext中得数据的更新
 		result.put("success", true);
 		}
 		else

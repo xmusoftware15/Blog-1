@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Cache-Control" content="no-transform">
 <meta http-equiv="Cache-Control" content="no-siteapp">
-	<title>SinceNovember-归档</title>
+	<title>Moonlight-归档</title>
   <link href="${pageContext.request.contextPath}/static/material/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
     <link href="${pageContext.request.contextPath}/static/material/css" rel="stylesheet" type="text/css">
 <link href="${pageContext.request.contextPath}/static/material/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -89,7 +89,7 @@
     <span class="archive-move-on"></span>
    <c:if test="${nowPage==1 }">
     <span class="archive-page-counter">
-      很好! 目前共计 ${blogcount } 篇日志。 继续努力。
+      哇! 目前已经有 ${blogcount } 篇日志。别偷懒！
     </span>
         <div class="collection-title">
           <h2 class="archive-year motion-element" id="archive-year-2018" style="opacity: 1; display: block; transform: translateX(0px);">${firstdate }</h2>

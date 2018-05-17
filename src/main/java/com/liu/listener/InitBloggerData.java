@@ -32,8 +32,8 @@ import com.liu.service.LinkService;
 
  /** 
  * @ClassName: InitBloggerData 
- * @author: lyd
- * @date: 2017年10月10日 下午12:32:35 
+ * @author: moonlight
+ * @date: 2018.5.12
  * @describe:监听器，用于刚开始加载博客的信息
  */
 @Component

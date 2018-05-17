@@ -7,7 +7,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">SinceNovember</span>
+  <span class="author" itemprop="copyrightHolder">Moonlight</span>
 </div>
 <div class="powered-by">
   由 <a class="theme-link" href="https://hexo.io/" rel="external nofollow">Hexo</a> 强力驱动

@@ -12,7 +12,7 @@
     <link href="${pageContext.request.contextPath}/static/material/css" rel="stylesheet" type="text/css">
 <link href="${pageContext.request.contextPath}/static/material/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="${pageContext.request.contextPath}/static/material/main.css" rel="stylesheet" type="text/css">
-<title>SinceNovember-主页</title>
+<title>Moonlight-主页</title>
 <script type="text/javascript">
 		window.onload = function() {
 		    //配置

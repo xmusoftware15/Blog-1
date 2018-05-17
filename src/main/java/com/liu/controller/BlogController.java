@@ -49,12 +49,12 @@ import com.liu.service.BloggerService;
 import com.liu.service.CommentService;
 import com.liu.service.LinkService;
 import com.liu.service.PhotoServiceImpl;
-import com.mysql.fabric.Server;
+
 
  /** 
  * @ClassName: BlogController 
- * @author: lyd
- * @date: 2017年10月10日 下午4:48:16 
+ * @author: moonlight
+ * @date: 2018.5.9 
  * @describe:前台博客信息Controller
  */
 @Controller
@@ -132,9 +132,6 @@ public class BlogController {
 		Long totalcomments=commentService.getTotal(map);
 		modelAndView.addObject("commentList", commentList);//评论信息
 		modelAndView.addObject("totalComments",totalcomments);
-//		modelAndView.addObject("commonPage", "foreground/blog/blogDetail.jsp");//明细的页面
-//		modelAndView.addObject("title", blog.getTitle()+"-刘宇东的博客");//标题
-//		modelAndView.addObject("pageCode", PageUtil.getPrevAndNextPageCode(blogService.getPrevBlog(id), blogService.getNextBlog(id),request.getServletContext().getContextPath()));//上一篇与下一篇
 		modelAndView.setViewName("detail");//跳转的页面
 		return modelAndView;
 	}

@@ -24,8 +24,8 @@ import net.sf.json.JSONObject;
 
  /** 
  * @ClassName: LinkAdminController 
- * @author: lyd
- * @date: 2017年10月10日 下午4:45:17 
+ * @author: moonlight
+ * @date: 2018.5.12
  * @describe:链接信息
  */
 @Controller
