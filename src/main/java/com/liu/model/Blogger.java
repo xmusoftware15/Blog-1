@@ -1,12 +1,14 @@
 package com.liu.model;
 
- /** 
+import java.io.Serializable;
+
+/** 
  * @ClassName: Blogger 
  * @author: lyd
  * @date: 2017年9月18日 下午7:14:21 
  * @describe:用户
  */
-public class Blogger {
+public class Blogger implements Serializable{
 	private Integer id;//id
 	private String username;//用户名
 	private String password;//密码

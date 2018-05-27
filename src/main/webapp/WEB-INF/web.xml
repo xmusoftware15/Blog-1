@@ -9,6 +9,11 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:ApplicationContext.xml</param-value>
 	</context-param>
+	<!-- Spring和dubbo的配置文件 -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:dubbo.xml</param-value>
+    </context-param>
 <!-- 	拦截404页面，修改404和500页面 -->
 	<error-page>
 	    <error-code>404</error-code>

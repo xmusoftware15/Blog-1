@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.liu.Utils.DateUtil;
 import com.liu.Utils.PageUtil;
 import com.liu.Utils.StringUtil;
 import com.liu.model.Blog;
@@ -34,53 +35,25 @@ import com.liu.service.BlogService;
 public class IndexController {
 	@Resource
 	private BlogService blogService;
-	@RequestMapping("/index")
-	public ModelAndView index(@RequestParam(value="paeg",required=false)String page
-							  ,@RequestParam(value="typeId",required=false)String typeId
-							  ,@RequestParam(value="releaseDateStr",required=false)String releaseDateStr
-							  ,HttpServletRequest request)throws Exception
+	@RequestMapping("/")
+	public ModelAndView index(HttpServletRequest request)throws Exception
 	{
+		
 		ModelAndView modelAndView=new ModelAndView();
-		if(StringUtil.isEmpty(page)){
-			page="1";
+		int pageSize=5;
+		int blogcounts=blogService.getAllBlog().size();//获取博客总数
+		Map<String, Object> map=new HashMap<String, Object>();
+		map.put("start", 0*pageSize);
+		map.put("pageSize", pageSize);
+		List<Blog> blogByPage=blogService.listBlog(map);
+		for (Blog blog : blogByPage) {
+			blog.setReleaseDateStr(DateUtil.formatString2(blog.getReleaseDate().toString()));
 		}
-		PageBean pageBean=new PageBean(Integer.parseInt(page),10);
-		Map<String,Object> map=new HashMap<String, Object>();
-		map.put("start", pageBean.getPageSize());
-		map.put("pageSize", pageBean.getPageSize());
-		map.put("typeId", typeId);
-		map.put("releaseDateStr", releaseDateStr);
-		List<Blog> blogList=blogService.listBlog(map);
-		for(Blog blog:blogList){
-			List<String>imageList=blog.getImageList();
-			String blogInfo=blog.getContent();
-			Document document=Jsoup.parse(blogInfo);
-			Elements jpgs=document.select("image[src$=.jpg]");
-			for(int i=0;i<jpgs.size();i++)
-			{
-				Element jpg=jpgs.get(i);
-				imageList.add(jpg.toString());
-				if(i==2)
-					break;
-			}
-		}
-			StringBuffer param=new StringBuffer();
-			if(StringUtil.isNotEmpty(typeId))
-			{
-				param.append("typeId="+typeId+"&");
-			}
-			if(StringUtil.isNotEmpty(releaseDateStr)){
-				param.append("releaseDateStr="+releaseDateStr+"&");
-			}
-			modelAndView.addObject("pageCode", PageUtil.genPagination(
-					request.getContextPath() + "/index.html", //还是请求该controller的index方法
-					blogService.getTotal(map), 
-					Integer.parseInt(page), 10,
-					param.toString()));
-			modelAndView.addObject("blogList", blogList);
-			modelAndView.addObject("commonPage", "foreground/blog/blogList.jsp");
-			modelAndView.addObject("title", "博客主页 - 胡辉的博客");
-			modelAndView.setViewName("mainTemp");
+		int totalPage=(int)Math.ceil(blogcounts*1.0/pageSize);//获取总的页数
+		modelAndView.addObject("blogList", blogByPage);
+		modelAndView.addObject("firsttotalPage", totalPage);
+		modelAndView.addObject("firstnowPage", 1);
+		modelAndView.setViewName("index");
 		return modelAndView;
 	}
 }
