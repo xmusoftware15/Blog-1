@@ -1,5 +1,6 @@
 package com.liu.controller.admin;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -49,6 +50,7 @@ public class BlogAdminController {
 	{
 		int resultTotal=0;
 		if(blog.getId()==null){//看该博客是否有id，没有则进行保存操作
+			blog.setReleaseDate(new Date());
 			resultTotal=blogService.addBlog(blog);
 			blogIndex.addIndex(blog);//添加索引
 		}

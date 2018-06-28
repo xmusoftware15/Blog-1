@@ -9,11 +9,7 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:ApplicationContext.xml</param-value>
 	</context-param>
-	<!-- Spring和dubbo的配置文件 -->
-    <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:dubbo.xml</param-value>
-    </context-param>
+	
 <!-- 	拦截404页面，修改404和500页面 -->
 	<error-page>
 	    <error-code>404</error-code>
@@ -23,7 +19,7 @@
 	    <error-code>500</error-code>
 	    <location>/static/500.html</location>
 	</error-page>
-	<listener>
+	 <listener>
 	    <listener-class>com.liu.listener.InitBloggerData</listener-class>
 	</listener>
 	<!-- 编码过滤器 -->

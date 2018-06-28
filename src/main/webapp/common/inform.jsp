@@ -45,8 +45,8 @@
                 </a>
               </span>
                <span class="links-of-author-item">
-                <a href="https://blog.csdn.net/qq_37841991" target="_blank" title="weibo">
-                    <i class="fa fa-fw fa-weibo"></i>
+                <a href="https://blog.csdn.net/qq_37841991" target="_blank" title="CSDN">
+                 
                   CSDN
                 </a>
               </span>

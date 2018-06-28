@@ -2,8 +2,11 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">
-  ©  2018 - 
-  <span itemprop="copyrightYear">2019</span>
+ 版权所有  © www.molight.top   
+  <span itemprop="recordnumber"><a href="http://www.miitbeian.gov.cn/">闽ICP备18011867号 | </a></span>
+<span itemprop="policerecordnumber">
+<img src="/static/userImages/ghs.png" data-original="/static/userImages/ghs.png" style="vertical-align: text-bottom; display: inline;">
+<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35021102000417">闽公网安备 35021102000417号</a></span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

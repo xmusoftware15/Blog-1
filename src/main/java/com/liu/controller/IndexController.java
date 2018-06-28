@@ -35,7 +35,7 @@ import com.liu.service.BlogService;
 public class IndexController {
 	@Resource
 	private BlogService blogService;
-	@RequestMapping("/")
+	@RequestMapping("/index")
 	public ModelAndView index(HttpServletRequest request)throws Exception
 	{
 		

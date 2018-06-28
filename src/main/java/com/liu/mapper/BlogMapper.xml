@@ -101,7 +101,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         SELECT * FROM t_blog WHERE releaseDate &lt;#{releaseDate}  ORDER BY releaseDate DESC LIMIT 1
     </select>
     <insert id="addBlog" keyProperty="id" parameterType="Blog" useGeneratedKeys="true">  
-        INSERT INTO t_blog VALUES(null,#{title},#{summary},now(),0,0,#{content},#{keyWord},#{blogType.id}) 
+        INSERT INTO t_blog VALUES(null,#{title},#{summary},#{releaseDate},0,0,#{content},#{keyWord},#{blogType.id}) 
 <!-- 	insert into t_blogtype (typeName,orderNum) values(#typeName,#orderNum) -->
     </insert>  
 <!--     <insert id="addBlog"  parameterType="Blog" > -->

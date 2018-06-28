@@ -1,4 +1,5 @@
   <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/static/bootstrap3/font-awesome/css/font-awesome.min.css">
   
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-meta custom-logo">
@@ -50,9 +51,9 @@
             关于
           </a>
         </li> 
-              <li class="menu-item menu-item-about" style="opacity: 1; transform: translateY(0px);">
+              <li class="menu-item menu-item-archives" style="opacity: 1; transform: translateY(0px);">
           <a href="${pageContext.request.contextPath }/other.jsp" rel="section">           
-              <i class="menu-item-icon fa fa-fw fa-user fa-fw"></i> <br>       
+              <i class="menu-item-icon fa fa-fw fa-user fa-paper-plane"></i> <br>       
          其他
           </a>
         </li> 

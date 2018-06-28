@@ -219,19 +219,11 @@ if (document.URL.indexOf("iqiyi.com") >= 0){
                 <audio autoplay="autoplay">
                     <source src="https://p2.music.126.net/NtXmSDF8kNJGKyJOK3D8GA==/6668538022554964.mp3" type="audio/mpeg">
                 </audio>
-                <p>Copyright ©2018 - 2019 SinceNovember </p></div>
+                <p>Copyright ©2018 - 2019 Moonlight </p></div>
         </div>
     </div>
 </div>
 <script src="${pageContext.request.contextPath}/static/other/hm.js(1)"></script><script src="${pageContext.request.contextPath}/static/other/vendors.js"></script>
 <script src="${pageContext.request.contextPath}/static/other/index.js"></script>
-<!--[if IE 6]>
-<script type="text/javascript" src="http://static.webgame.kanimg.com/com/DD_PNG_min.js"></script>
-<script type="text/javascript">
-	var links=document.getElementsByTagName("a");
-	for(var i=0,l=links.length;i<l;i++){
-		links[i].setAttribute("hideFocus",true);
-	}
-</script>
-<![endif]-->
+
 </body></html>

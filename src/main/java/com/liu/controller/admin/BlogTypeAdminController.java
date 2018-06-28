@@ -76,7 +76,8 @@ public class BlogTypeAdminController {
 			int blogTypeTotal=blogTypeService.getBlogTypeData().size();
 			int linkTotal=linkService.getLinkData().size();
 			int alltotals=blogTypeTotal+linkTotal;
-			List<BlogType> BlogTypeList=blogTypeService.getBlogTypeData();//即使跟新博客类别信息
+			List<BlogType> BlogTypeList=blogTypeService.getBlogTypeData();//即使更新博客类别信息
+			request.getSession().getServletContext().setAttribute("blogTypeList", BlogTypeList);
 			request.getSession().getServletContext().setAttribute("countsallcategories", blogTypeTotal);
 			request.getSession().getServletContext().setAttribute("countsalltags", alltotals);
 			jsonObject.put("success", true);
@@ -104,7 +105,8 @@ public class BlogTypeAdminController {
 		int blogTypeTotal=blogTypeService.getBlogTypeData().size();
 		int linkTotal=linkService.getLinkData().size();
 		int alltotals=blogTypeTotal+linkTotal;
-		List<BlogType> BlogTypeList=blogTypeService.getBlogTypeData();//即使跟新博客类别信息
+		List<BlogType> BlogTypeList=blogTypeService.getBlogTypeData();//即使更新博客类别信息
+		request.getSession().getServletContext().setAttribute("blogTypeList", BlogTypeList);
 		request.getSession().getServletContext().setAttribute("countsallcategories", blogTypeTotal);
 		request.getSession().getServletContext().setAttribute("countsalltags", alltotals);
 		jsonObject.put("success", true);
