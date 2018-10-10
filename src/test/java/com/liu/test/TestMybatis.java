@@ -165,4 +165,16 @@ public class TestMybatis {
 		// link.setId(2);
 		// System.out.println(linkServiceImpl.deleteLink(2));
 	}
+	@Test
+	public void testAddBlog(){
+		Blog blog=new Blog();
+		blog.setId(73);
+		blog.setTitle("你好");
+		blog.setContent("你好大幅减少了克己复礼");
+		BlogType blogType=blogTypeServiceImpl.getById(1);
+		blog.setBlogType(blogType);
+		System.out.println(blog);
+		int r=blogServiceImpl.update(blog);
+		System.out.println(r);
+	}
 }
